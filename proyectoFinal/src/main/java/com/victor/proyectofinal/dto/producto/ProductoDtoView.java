@@ -1,6 +1,6 @@
 package com.victor.proyectofinal.dto.producto;
 
-import com.victor.proyectofinal.entity.Proveedor;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

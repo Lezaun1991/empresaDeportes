@@ -1,7 +1,6 @@
 package com.victor.proyectofinal.dto.direccion;
 
-import com.victor.proyectofinal.dto.cliente.ClienteCreateDto;
-import com.victor.proyectofinal.entity.Cliente;
+
 import com.victor.proyectofinal.entity.Direccion;
 import org.mapstruct.CollectionMappingStrategy;
 import org.mapstruct.Mapper;

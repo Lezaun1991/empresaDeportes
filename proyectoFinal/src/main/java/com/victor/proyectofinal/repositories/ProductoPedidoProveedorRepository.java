@@ -1,6 +1,5 @@
 package com.victor.proyectofinal.repositories;
 
-import com.victor.proyectofinal.entity.ProductoPedidoCliente;
 import com.victor.proyectofinal.entity.ProductoPedidoProveedor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

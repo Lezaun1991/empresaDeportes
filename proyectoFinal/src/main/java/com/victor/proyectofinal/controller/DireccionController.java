@@ -8,11 +8,8 @@ import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.Map;
 
 @Slf4j
 @Data
@@ -22,10 +19,7 @@ public class DireccionController {
     private final DireccionService direccionService;
 
     @PostMapping("/crear")
-    public ResponseEntity<?> create(@Valid @RequestBody DireccionDto direccionDto, BindingResult result) {
-        if(result.hasErrors()){
-            return validation(result);
-        }
+    public ResponseEntity<?> create(@Valid @RequestBody DireccionDto direccionDto) {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(direccionService.save(direccionDto));
     }
@@ -48,14 +42,5 @@ public class DireccionController {
         } catch (Exception e) {
             return new ResponseEntity<>("Error al eliminar la dirección", HttpStatus.INTERNAL_SERVER_ERROR);
         }
-    }
-
-    private ResponseEntity<?> validation(BindingResult result) {
-        Map<String,String> errors = new HashMap<>();
-
-        result.getFieldErrors().forEach(err -> {
-            errors.put(err.getField(), "El campo " + err.getField() + " " + err.getDefaultMessage());
-        });
-        return ResponseEntity.badRequest().body(errors);
     }
 }

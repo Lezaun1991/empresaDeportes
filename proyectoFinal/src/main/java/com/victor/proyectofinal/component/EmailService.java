@@ -2,20 +2,16 @@ package com.victor.proyectofinal.component;
 
 import com.victor.proyectofinal.entity.Cliente;
 import com.victor.proyectofinal.entity.PedidoCliente;
-import com.victor.proyectofinal.entity.Producto;
 import com.victor.proyectofinal.entity.ProductoPedidoCliente;
 import com.victor.proyectofinal.repositories.ProductoPedidoClienteRepository;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Set;
-import java.util.logging.Logger;
+
 
 @Slf4j
 

@@ -18,7 +18,7 @@ public interface ClienteService {
 
     Cliente actualizarCliente(ClienteUpdateCorreoUsernameDto clienteUpdateCorreoUsernameDto);
 
-    Optional<Cliente> buscarPorUsernameOEmail(String s);
+
 
 
 }

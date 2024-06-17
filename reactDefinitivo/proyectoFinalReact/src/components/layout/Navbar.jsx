@@ -10,7 +10,7 @@ import "../../css/navbar.css";
 
 export const Navbar = () => {
     const { login, handlerLogout } = useContext(AuthContext);
-    const { categorias, buscarProductosPorCategoria } = useContext(ProductoContext);
+    const { categorias, buscarProductosPorCategoria,buscarProductos } = useContext(ProductoContext);
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [categoriesDropdownOpen, setCategoriesDropdownOpen] = useState(false);
     const navigate = useNavigate();
@@ -29,6 +29,11 @@ export const Navbar = () => {
 
     const closeCategoriesDropdown = () => {
         setCategoriesDropdownOpen(false);
+    };
+
+    const handleCatalogoClick = async () => {
+        await buscarProductos(); // Llamada a la función para obtener todos los productos
+        navigate("/catalogo");
     };
 
     const handleCategoryClick = (categoriaId) => {
@@ -72,7 +77,7 @@ export const Navbar = () => {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/catalogo">Catalogo</NavLink>
+                            <NavLink className="nav-link" to="/catalogo" onClick={handleCatalogoClick}>Catalogo</NavLink>
                             </li>
                             {login.isAuth && (
                                 <li className="nav-item">

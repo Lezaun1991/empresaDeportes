@@ -17,7 +17,6 @@ import java.util.Set;
 @NoArgsConstructor
 @Entity
 @Table(name = "cliente")
-//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

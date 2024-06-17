@@ -80,9 +80,4 @@ public class ClienteServiceImpl implements ClienteService {
         BeanCopyUtils.copyNonNullProperties(clienteSource, clienteTarget);
         return clienteRepository.save(clienteTarget);
     }
-
-    @Override
-    public Optional<Cliente> buscarPorUsernameOEmail(String s) {
-        return clienteRepository.buscarPorUsernameOEmail(s);
-    }
 }
