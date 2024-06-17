@@ -98,6 +98,6 @@ docker-compose up
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/Lezaun91/empresaDeportes.git
    cd tu-repositorio
 
