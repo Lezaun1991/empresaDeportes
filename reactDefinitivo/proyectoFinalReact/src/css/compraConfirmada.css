@@ -1,0 +1,88 @@
+/* compraConfirmada.css */
+.compra-confirmada-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.compra-confirmada-container h1 {
+    color: #1e88e5;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.compra-confirmada-container h3 {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.compra-confirmada-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.button-download {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-download:hover {
+    background-color: #1565c0;
+}
+
+.compra-confirmada-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.compra-confirmada-table th,
+.compra-confirmada-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.compra-confirmada-table th {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.compra-confirmada-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.compra-confirmada-table tr:hover {
+    background-color: #ddd;
+}
+
+.compra-confirmada-table th,
+.compra-confirmada-table td {
+    text-align: center;
+}
+
+.compra-confirmada-table tfoot td {
+    font-weight: bold;
+}

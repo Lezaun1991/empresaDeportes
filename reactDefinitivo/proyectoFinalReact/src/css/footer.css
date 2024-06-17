@@ -1,0 +1,86 @@
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #777;
+    padding-top: 10px;
+  }
+
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;  /* Asegura que el footer ocupe el 100% del ancho */
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  /*PARA EL FOOTER*/
+  
+  /* src/components/layout/Footer.css */
+  
+  /* Asegúrate de que el contenedor principal ocupe toda la pantalla */
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #tamaño-footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que ocupe al menos la altura de la ventana */
+  }
+  
+  .content {
+    flex: 1; /* Permite que este div crezca y ocupe el espacio disponible */
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;  /* Asegura que el footer ocupe el 100% del ancho */
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Puedes ajustar esto según tus necesidades */
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #777;
+    padding-top: 10px;
+  }
+  
+  

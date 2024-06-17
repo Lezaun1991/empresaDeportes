@@ -1,0 +1,11 @@
+# Usa la imagen oficial de MySQL
+
+FROM mysql:8.0
+
+# Configura variables de entorno para la base de datos
+ENV MYSQL_ROOT_PASSWORD=victor
+ENV MYSQL_DATABASE=proyectodefinitivo
+
+# Copia los scripts SQL al directorio de inicialización de MySQL
+COPY 001-createTabla.sql /docker-entrypoint-initdb.d/
+COPY 002-insertDatos.sql /docker-entrypoint-initdb.d/

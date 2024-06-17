@@ -1,0 +1,81 @@
+/* actualizarDatosGenerales.css */
+
+.registro-formulario-cliente {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .registro-formulario-cliente .text-center {
+    text-align: center;
+  }
+  
+  .registro-formulario-cliente h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .registro-formulario-cliente .form-table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .registro-formulario-cliente .form-table .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .registro-formulario-cliente .form-table .table td {
+    padding: 10px;
+    vertical-align: top;
+  }
+  
+  .registro-formulario-cliente .form-label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .registro-formulario-cliente .form-control {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .registro-formulario-cliente .form-control:focus {
+    border-color: #007bff;
+  }
+  
+  .registro-formulario-cliente .text-danger {
+    color: #d9534f;
+    font-size: 0.875em;
+    margin-top: 5px;
+  }
+  
+  .registro-formulario-cliente .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .registro-formulario-cliente .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .registro-formulario-cliente .logo-empresa {
+    display: block;
+    margin: 0 auto 10px;
+    width: 100px;
+    height: auto;
+  }
+  

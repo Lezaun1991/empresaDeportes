@@ -1,0 +1,132 @@
+/* Estilos generales */
+.lista-pedidos-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.lista-pedidos-mt-5 {
+    margin-top: 3rem !important;
+}
+
+.lista-pedidos-shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+/* Estilos para las tarjetas de pedido */
+.lista-pedidos-pedidos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.lista-pedidos-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    flex: 1 1 calc(33.333% - 10px); /* Ajustar para que las tarjetas ocupen 1/3 del contenedor */
+    display: flex;
+    flex-direction: column;
+    max-width: calc(33.333% - 10px); /* Asegurar que las tarjetas no excedan el tamaño del contenedor */
+    box-sizing: border-box;
+    height: auto; /* Asegurar que las tarjetas se adapten a la altura del contenido */
+    min-height: 300px; /* Establecer una altura mínima para que todas las tarjetas sean iguales */
+}
+
+.lista-pedidos-card:hover {
+    transform: translateY(-5px);
+}
+
+.lista-pedidos-card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.lista-pedidos-card-body {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    flex: 1; /* Asegura que las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-pedidos-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.lista-pedidos-card-text {
+    margin-bottom: 0.5rem;
+}
+
+.lista-pedidos-hr {
+    border-top: 1px solid #ddd;
+    margin: 1.5rem 0;
+}
+
+/* Estilos para la tabla de productos */
+.lista-pedidos-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.lista-pedidos-table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.lista-pedidos-th, .lista-pedidos-td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.lista-pedidos-th {
+    text-align: left;
+}
+
+/* Estilos para la alerta */
+.lista-pedidos-alert {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.lista-pedidos-alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .lista-pedidos-card {
+        flex: 1 1 calc(50% - 10px); /* Adaptar las tarjetas a 2 columnas en pantallas medianas */
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .lista-pedidos-container {
+        padding: 10px;
+    }
+    
+    .lista-pedidos-card-body, .lista-pedidos-card-header {
+        padding: 1rem;
+    }
+    
+    .lista-pedidos-card-title {
+        font-size: 1.25rem;
+    }
+    
+    .lista-pedidos-card {
+        flex: 1 1 calc(100% - 10px); /* Adaptar las tarjetas al ancho completo en pantallas pequeñas */
+        max-width: 100%;
+    }
+}

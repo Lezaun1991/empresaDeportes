@@ -1,0 +1,112 @@
+/* navbar.css */
+.navbar {
+  margin-bottom: 20px; /* Añade un margen inferior para la separación */
+  background-color: #343a40; /* Color de fondo oscuro */
+  padding: 10px 20px; /* Espaciado interno */
+}
+
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00aaff; /* Color al pasar el mouse */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%288, 8, 8, 0.7%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-dropdown {
+  position: relative;
+}
+
+.custom-dropdown-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-dropdown-button:hover {
+  background-color: #0056b3;
+}
+
+.custom-dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 200px;
+  background-color: #343a40;
+  border: none;
+  border-radius: 5px;
+}
+
+.custom-dropdown-menu .dropdown-item {
+  color: #ffffff;
+  background-color: #343a40; /* Fondo oscuro para el menú */
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+  background-color: #007bff;
+}
+
+.custom-dropdown-menu .dropdown-divider {
+  height: 1px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  background-color: #444;
+}
+
+.text-primary {
+  color: #00aaff !important;
+}
+
+/* Aseguramos que el contenido no quede cubierto por el Navbar */
+.content {
+  margin-top: 80px; /* Ajusta este valor según la altura del Navbar */
+}
+
+/* Estilos personalizados para el Dropdown de Categorías */
+.navbar-categories-dropdown .dropdown-toggle {
+  color: #ffffff; /* Color claro para el texto */
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+}
+
+.navbar-categories-dropdown .dropdown-toggle:hover {
+  color: #00aaff; /* Color azul para hover */
+}
+
+.navbar-categories-dropdown .dropdown-menu {
+  background-color: #343a40; /* Fondo oscuro para el menú */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-categories-dropdown .dropdown-item {
+  color: #ffffff;
+  background-color: #343a40; /* Fondo oscuro para el menú */
+}
+
+.navbar-categories-dropdown .dropdown-item:hover {
+  background-color: #007bff; /* Color al pasar el mouse */
+  color: #ffffff;
+}
+
+.navbar-categories-dropdown .dropdown-divider {
+  height: 1px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  background-color: #444;
+}

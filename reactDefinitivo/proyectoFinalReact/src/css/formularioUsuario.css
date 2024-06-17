@@ -1,0 +1,82 @@
+/* formularioUsuario.css */
+
+.contenedor-formulario-cliente {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .contenedor-formulario-cliente h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .contenedor-formulario-cliente .formulario-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  
+  .contenedor-formulario-cliente .formulario-tabla {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .contenedor-formulario-cliente .formulario-tabla td {
+    padding: 10px;
+  }
+  
+  .contenedor-formulario-cliente .formulario-tabla .formulario-etiqueta {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .contenedor-formulario-cliente .formulario-tabla .formulario-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contenedor-formulario-cliente .formulario-tabla .formulario-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .contenedor-formulario-cliente .formulario-tabla .text-danger {
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+  
+  .contenedor-formulario-cliente .formulario-boton {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contenedor-formulario-cliente .formulario-boton:hover {
+    background-color: #0056b3;
+  }
+  
+  .contenedor-formulario-cliente .formulario-icono-exito {
+    margin-left: 10px;
+  }
+  
+  .contenedor-formulario-cliente .formulario-icono-error {
+    margin-left: 10px;
+  }
+  

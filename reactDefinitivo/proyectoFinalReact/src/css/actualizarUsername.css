@@ -1,0 +1,69 @@
+.update-username-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f6f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.update-username-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.update-username-form {
+    width: 100%;
+}
+
+.update-username-form-group {
+    margin-bottom: 15px;
+}
+
+.update-username-form-label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.update-username-form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.update-username-error-message {
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.update-username-submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.update-username-submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Logo de la empresa */
+.update-username-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}

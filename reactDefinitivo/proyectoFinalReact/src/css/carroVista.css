@@ -1,0 +1,88 @@
+/* CarroVista Styles */
+.carro-vista {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.carro-vista h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.carro-vista table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.carro-vista table th, 
+.carro-vista table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.carro-vista table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.carro-vista table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.carro-vista .btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carro-vista .btn-delete {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carro-vista .btn-delete:hover {
+    background-color: #c82333;
+}
+
+.carro-vista .total-container {
+    text-align: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.carro-vista .btn-primary-lg {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.carro-vista .btn-secondary-lg {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carro-vista .btn-secondary-lg:hover {
+    background-color: #5a6268;
+}
